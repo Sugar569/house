@@ -1,0 +1,306 @@
+/*all*/
+body {
+    color: black;
+    font-family: "Sawarabi Gothic";
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    list-style: none;
+}
+
+.wrapper {
+    max-width: 960px;
+    margin: 0 auto 0 auto;
+    font-size: 0.9rem;
+    padding: 0 4%;
+}
+
+
+/*header section*/
+header {
+    margin: 55px 70px 55px 70px;
+    justify-content: space-between;
+    display: flex;
+}
+
+.site-title {
+    font-size: 37px;
+}
+
+header nav {
+    align-items: center;
+}
+
+header nav ul {
+    margin: 23px 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 25px;
+    transition: all 0.3s;
+}
+
+header nav ul li:hover {
+    opacity: 30%;
+}
+
+header nav ul li img.icon {
+    width: 25px;
+}
+
+/*hero section*/
+
+
+.hero-img img {
+    width: 100%;
+    height: 550px
+}
+
+/*about section*/
+.about-section {
+    margin-top: 120px;
+}
+
+.About {
+    width: 430px;
+    margin: 70px auto 0 auto;
+    text-align: center;
+}
+
+.about {
+    font-size: 15px;
+}
+
+.message {
+    margin-top: 20px;
+    line-height: 2;
+    font-size: 20px;
+}
+
+.about-address {
+    margin: 90px 0 0 100px;
+    line-height: 2.3;
+}
+
+.about-exp {
+    margin: 60px 0 0 100px;
+    line-height: 2;
+}
+
+/*products section*/
+
+.products-title {
+
+    font-size: 15px;
+    width: 100px;
+    margin: 60px auto 50px auto; 
+}
+
+.products ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.products ul li {
+    margin-bottom: 30px;
+}
+
+.products ul li img {
+    width: 250px;
+    height: 150px;
+    border-radius: 30px 30px 30px 0;
+}
+
+/*news section*/
+
+.news-title {
+    font-size: 25px;
+    width: 100px;
+    margin: 50px auto 50px auto;
+}
+
+.news-section dl {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid #c8c8c8;
+}
+
+.news-section dd {
+    width: 80%;
+    font-size: 16px;
+    padding: 10px
+}
+
+.news-section dt {
+    width: 20%;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.news-section dd,
+.news-section dt {
+    border-bottom: 1px solid #c8c8c8;
+
+}
+
+/*contact section*/
+
+.contact-title {
+    width: 100px;
+    font-size: 15px;
+    margin: 60px auto 30px auto;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+form dt {
+    width: 15%;
+    margin-bottom: 10px;
+}
+
+form dd {
+    width: 85%;
+    border: 1px solid #c8c8c8;
+    margin-bottom: 10px;
+}
+
+form dd input {
+    height: 40px;
+    width: 100%;
+}
+
+form dd textarea {
+    height: 80px;
+    width: 100%;
+}
+
+.button {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.button input {
+    color: white;
+    background-color: black;
+    padding: 10px 70px;
+    border: 1px solid black;
+    transition: all 0.3s;
+}
+
+.button input:hover {
+    color: black;
+    background-color: white;
+}
+
+/*footer section*/
+.footer {
+    background-color: black;
+    width: 100%;
+}
+
+.footer p {
+    width: 100px;
+    margin: 0 auto;
+}
+
+
+/*sp*/
+@media  screen and (max-width: 600px) {
+    /*header section*/
+    header {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .site-title {
+        margin: 0 auto 20px auto;
+    }
+
+    /*hero section*/
+    .hero-img {
+        width: 100%;
+    }
+
+    .hero-img img {
+        height: 420px;
+    }
+    
+    /*about section*/
+    .message {
+        margin-left: 7px;
+    }
+
+    .about-address,
+    .about-exp {
+        margin-left: 40px;
+    }
+
+    .about-address {
+        text-align: center;
+    }
+
+
+
+    /*product section*/
+    .products-section {
+        width: 100%;
+    }
+
+    .products ul  li {
+        margin: 0 auto 40px auto;
+        display: flex;
+        flex-direction: column;
+
+    }
+    
+    /*news section*/
+    .news-section {
+        width: 100%;
+    }
+
+    .news-section dl {
+        flex-direction: column;
+    }
+
+    .news-section dl dt {
+        border: none;
+        width: 100%;
+        padding-bottom: 0px;
+    }
+
+    .news-section dl dd {
+        width: 100%;
+    }
+
+    /*contact section*/
+    
+
+     form {
+        flex-direction: column;
+    }
+
+    form dt,
+    form dd {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    form dd {
+        margin-bottom: 15px;
+    }
+
+    form dt {
+        margin-bottom: 3.5px;
+    }
+}
+
